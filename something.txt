@@ -1,0 +1,15 @@
+[
+    {'': '', 'Champion': 'Riven', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''},
+    {'': '', 'Champion': 'Gwen', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Mordekaiser', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''},
+    {'': '', 'Champion': 'Wukong', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Camille', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Shen', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Gragas', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Renekton', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Nasus', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Lee Sin', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Yasuo', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Irelia', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}, 
+    {'': '', 'Champion': 'Nocturne', 'Skill Level': '', 'Happiness Level': '', 'Matchup Variance': ''}
+    ]
