@@ -1,3 +1,5 @@
+import multiprocessing as mp
+
 class Comp:
     def __init__(self, top, jg, mid, bot, support, happiness, skill, matchup):
         self.top = top
@@ -51,11 +53,34 @@ class Comp:
         synergy_score = len(synergies) - len(foils)
 
         return {"synergies": synergies, "foils": foils, "synergy_score": synergy_score}
+    
+    # def compare_champions(self, champ):
+
+    #     synergies_1 = champ[0].traits.intersection(champ[1].synergies)
+    #     synergies_2 = champ[1].traits.intersection(champ[0].synergies)
+    #     synergies = synergies_1 | synergies_2
+
+    #     foils_1 = champ[0].traits.intersection(champ[1].foils)
+    #     foils_2 = champ[1].traits.intersection(champ[0].foils)
+    #     foils = foils_1 | foils_2
+
+    #     synergy_score = len(synergies) - len(foils)
+
+    #     return {"synergies": synergies, "foils": foils, "synergy_score": synergy_score}
 
     def calculate_total_synergy_score(self):
         self.total_synergy_score = self.top_jg_synergies["synergy_score"] + self.top_mid_synergies["synergy_score"] + self.top_bot_synergies["synergy_score"] + self.top_support_synergies["synergy_score"] + self.jg_mid_synergies["synergy_score"] + self.jg_bot_synergies["synergy_score"] + self.jg_support_synergies["synergy_score"] + self.mid_bot_synergies["synergy_score"] + self.mid_support_synergies["synergy_score"] + self.bot_support_synergies["synergy_score"]
+
+    # def calculate_total_synergy_score(self):
+    #     self.total_synergy_score = 0
+    #     for synergy in self.synergy_scores:
+    #         self.total_synergy_score += synergy["synergy_score"]
+
 
     def analyze(self):
         self.iterate_comp_and_initialize_metrics()
         self.pairwise_analysis()
         self.calculate_total_synergy_score()
+    
+    def string_form(self):
+        return str(self.total_synergy_score)+"\n"

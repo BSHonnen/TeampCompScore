@@ -116,6 +116,7 @@ def add_champion_to_role_map_and_champion_map(champion, role_map, champion_map, 
         )
         champion_map[champion['Champion']] = champion_object
     role_map[champion['Champion']] = { 
+            "Champion":champion['Champion'],
             "skill": int(champion['Skill Level']),
             "happiness": int(champion['Happiness Level']),
             "matchup_spread": int(champion['Matchup Variance'])

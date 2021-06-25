@@ -1,7 +1,7 @@
 from HashTable import HashTable
 
 def calculate_combinations_of_four(list_of_lists_len_5):
-    four_drops = HashTable(255000)
+    four_drops = HashTable(3000000)
     all_lists = []
     for i in range(len(list_of_lists_len_5)):
         restricted_list = list_of_lists_len_5.copy()
